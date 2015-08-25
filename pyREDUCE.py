@@ -1,4 +1,4 @@
-def flat_sp_func(order,ycen,osample=10,lamb_sp=25.0,lambda_sf=0.1,use_mask=0,noise=5.85,uncert=False,im_output=False,normflat=False,slitfunc=False):
+def flat_sp_func(order,ycen,osample=10,lamb_sp=0.0,lambda_sf=0.1,use_mask=0,noise=5.85,uncert=False,im_output=False,normflat=False,slitfunc=False):
 	#order:		full order as spatial pixel by dispersion pixel array
 	#ycen:		coordinates of the centre along the order in the dispersion direction
 	#osample:	oversampling rate
