@@ -1,9 +1,10 @@
 def flat_sp_func(order,ycen,osample=10,lamb_sp=0.0,lambda_sf=0.1,use_mask=0,noise=5.85,uncert=False,im_output=False,normflat=False,slitfunc=False):
-	#order:		full order as spatial pixel by dispersion pixel array
+	#order:		order as spatial pixel by dispersion pixel array
 	#ycen:		coordinates of the centre along the order in the dispersion direction
 	#osample:	oversampling rate
 	#lamb_sp:	spectral step
 	#lamb_sf:	slitfunction step
+	#use_mask:	mask - same shape as order, 1 where pixel is good, else 0. If not supplied one will be constructed (crudely)
 	#noise: 	noise value with default 5.85
 	#uncert:	array of uncertainties if passing them into this method
 	#im_output:	do we wish to output a reconstruction at the end?
