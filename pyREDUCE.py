@@ -1,6 +1,6 @@
 def flat_sp_func(order,ycen,osample,lamb_sp,lambda_sf=0.1,use_mask=0,noise=5.85,uncert=False,im_output=False,normflat=False,slitfunc=False):
-	#order:		full order as an x by y array
-	#ycen:		coordinates of the centre along the order
+	#order:		full order as spatial pixel by dispersion pixel array
+	#ycen:		coordinates of the centre along the order in the dispersion direction
 	#osample:	oversampling rate
 	#lamb_sp:	spectral step
 	#lamb_sf:	slitfunction step
