@@ -61,13 +61,12 @@ def flat_sp_func(order,ycen,osample,lamb_sp,lambda_sf=0.1,use_mask=0,noise=5.85,
 
 ########################################################################
 	for iter in range(1,25):
-	#if iter == 2: gold = np.copy(sp)
 	#build a matrix with Omega as the diagonal
 		Akl=np.zeros((2*osample+1,n))
 		Bl=np.zeros((1,n))
 		omega=np.repeat(weight,osample+1)
 		for i in range(0, ncol):
-			#Creating arrays by weight, does not require reading trace
+			#Creating arrays by weight
 			omega=np.repeat(weight,osample+1)
 			yy=y+ycen[i]
 			ind=np.where((yy>=0.0) & (yy<1.))[0]
